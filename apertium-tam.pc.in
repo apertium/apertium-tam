@@ -1,0 +1,8 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+srcdir=@datarootdir@/apertium/apertium-tam
+
+Name: apertium-tam
+Description: Finite-state morphological transducer and constraint grammar for Tamil 
+Version: @VERSION@
+
