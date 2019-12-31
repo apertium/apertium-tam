@@ -4,6 +4,9 @@ Multichar_Symbols
 
 ! Part of speech categories
 %<n%>   ! Noun
+%<nom%> ! Nominative
+
+%{A%}   ! Archivowel 'a' or 'e'
 
 ! Number morphology
 %<pl%>  ! Plural
@@ -19,22 +22,21 @@ Multichar_Symbols
 
 LEXICON Root
 
-NounRoot ;
+NounStems ;
 
+LEXICON Ninfl
 
-LEXICON RegNounInfl
-
-%<n%>%<sg%>: # ;
-%<n%>%<pl%>:%>s # ;
-
+%<n%>: # ;
+%<n%>%<pl%>:%>%{A%} # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON NounRoot
+LEXICON NounStems
 
-house:house RegNounInfl ; ! A noun
+குடும்பம் Ninfl ; ! "family"
+புறா Ninfl ;   ! "dove"
 
 
 

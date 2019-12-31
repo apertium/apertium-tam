@@ -1,17 +1,36 @@
 Alphabet
- A B Ç D E Ä F G H I J Ž K L M N Ň O Ö P R S Ş T U Ü W Y Ý Z
- a b ç d e ä f g h i j ž k l m n ň o ö p r s ş t u ü w y ý z
- %{A%}:a %>:0  ;
+    அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன
+     ா  ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ   ்
+     %{A%}:கள் %>:0;
 
 Sets
 
-Vowel = A E Ä I O Ö U Ü Y Ý 
-        a e ä i o ö u ü y ý ;
+Consonant = க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன ;
+Mellinam = ங ஞ ண ந ம ன;
+Vallinam = க ச ட த ப ற;
+Idaiyinam = ய ர ல வ	ழ ள ;
+
+Vowel = அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ ;
+VowSym = ா  ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ ;
 
 Rules 
 
-"Remove suffix vowel with vowel-ending stem"
-i:0 <=> Vow %{VSUF%}:0 _ [ m | n ] ;
+"Ending with Vowels"
+%{A%}:க்கள் <=> VowSym: %>: _ ;
+
+"Ending with Idaiyinam"
+%{A%}:கள் <=> Idaiyinam: ்: %>: _ ;
+
+"Ending with Mellinam"
+%{A%}:ங்கள் <=> Mellinam: ்: %>: _ ;
+
+"Ending with Mellinam"
+  ்:0 <=> Mellinam: _ %>: ;
+  
+"Removing Mellinam Before adding suffix"
+Vx:0 <=> _ ்: %>: ;
+    where Vx in Mellinam ;
+
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol
