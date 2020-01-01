@@ -10,9 +10,12 @@ Mellinam = ங ஞ ண ந ம ன;
 Vallinam = க ச ட த ப ற;
 Idaiyinam = ய ர ல வ ழ ள;
 
+RemConsonant = Mellinam ல ;
+
 Vowel = அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ ;
 ShortVowSym = ி  ு  ெ  ை  ொ;
 LongVowSym =  ா  ீ  ூ  ே  ோ  ௌ;
+
 
 Rules 
 
@@ -22,17 +25,20 @@ Rules
 "Ending with Mellinam"
 %{X%}:ங <=> Mellinam: ்: %>: _ ;
 
+"Ending with ல"
+%{X%}:ற <=> ல:  ்: %>: _ ;
+
 "Adding Kurru"
 0:Vy <=> LongVowSym: %>: %{X%}: _ க: ;
-           ்: %>: %{X%}: _ க: ;
+         RemConsonant: ்: %>: %{X%}: _ க: ;
          where Vy in (  ் ) ;
 
-"Removing Mellinam When adding Suffix"
-  ்:0 <=> Mellinam: _ %>: ;
+"Removing Consonant When adding Suffix"
+  ்:0 <=> RemConsonant: _ %>: ;
 
-"Removing Mellinam When adding suffix"
+"Removing Consonant When adding suffix"
 Vx:0 <=> _ ்: %>: ;
-    where Vx in Mellinam ;
+    where Vx in ( RemConsonant ) ;
 
 
 ! Resources:
