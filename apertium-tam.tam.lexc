@@ -6,13 +6,13 @@ Multichar_Symbols
 %<n%>   ! Noun
 %<nom%> ! Nominative
 
-%{A%}   ! Archivowel 'a' or 'e'
-
 ! Number morphology
 %<pl%>  ! Plural
 %<sg%>  ! Singular
 
 ! Other symbols
+%{X%}   ! Infix Consonant
+
 %>      ! Morpheme boundary
 
 
@@ -26,8 +26,8 @@ NounStems ;
 
 LEXICON Ninfl
 
-%<n%>: # ;
-%<n%>%<pl%>:%>%{A%}கள் # ;
+%<n%>%<sg%>: # ;
+%<n%>%<pl%>:%>%{X%}கள் # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
