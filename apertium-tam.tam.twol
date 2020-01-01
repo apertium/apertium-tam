@@ -27,10 +27,10 @@ Rules
            ்: %>: %{A%}: _ க: ;
     where Vy in (  ் ) ;
 
-"Ending with Mellinam"
+"Removing Mellinam When adding Suffix"
   ்:0 <=> Mellinam: _ %>: ;
 
-"Removing Mellinam Before adding suffix"
+"Removing Mellinam When adding suffix"
 Vx:0 <=> _ ்: %>: ;
     where Vx in Mellinam ;
 
