@@ -1,32 +1,33 @@
 Alphabet
     அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன
-     ா  ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ   ்
-     %{A%}:கள் %>:0;
+   ா ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ   ்
+     %{A%}:0 %>:0;
 
 Sets
 
-Consonant = க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன ;
+Consonant = க ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன ;
 Mellinam = ங ஞ ண ந ம ன;
 Vallinam = க ச ட த ப ற;
-Idaiyinam = ய ர ல வ	ழ ள ;
+Idaiyinam = ய ர ல வ	ழ  ;
 
 Vowel = அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ ;
-VowSym = ா  ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ ;
+ShortVowSym = ி  ு  ெ  ை  ொ;
+LongVowSym =  ா  ீ  ூ  ே  ோ  ௌ;
 
 Rules 
 
 "Ending with Vowels"
-%{A%}:க்கள் <=> VowSym: %>: _ ;
+%{A%}:க <=> LongVowSym: %>: _ ;
 
-"Ending with Idaiyinam"
-%{A%}:கள் <=> Idaiyinam: ்: %>: _ ;
+"End"
+0:w <=> %{A%} _ #;
 
 "Ending with Mellinam"
-%{A%}:ங்கள் <=> Mellinam: ்: %>: _ ;
+%{A%}:ங <=> Mellinam: ்: %>: _ ;
 
 "Ending with Mellinam"
   ்:0 <=> Mellinam: _ %>: ;
-  
+
 "Removing Mellinam Before adding suffix"
 Vx:0 <=> _ ்: %>: ;
     where Vx in Mellinam ;
