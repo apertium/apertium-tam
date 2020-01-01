@@ -27,7 +27,7 @@ NounStems ;
 LEXICON Ninfl
 
 %<n%>: # ;
-%<n%>%<pl%>:%>%{A%}கள் # ;
+%<n%>%<pl%>:%>%{A%} # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -37,8 +37,7 @@ LEXICON NounStems
 
 குடும்பம் Ninfl ; ! "family"
 புறா Ninfl ;   ! "dove"
-மரம் Ninfl ;   ! "tree"
-காடு Ninfl ;   ! "forest"
+
 
 
 ! Resources:
