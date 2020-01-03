@@ -3,22 +3,29 @@
 Multichar_Symbols
 
 ! Part of speech categories
-%<n%>   ! Noun
-%<nom%> ! Nominative
-%<adj%> ! Adjective
-%<adv%> ! Adverb
-%<num%> ! Numeral
-%<post%> ! Postpositions
-%<spost%> ! Separable Postpositions
+%<n%>           ! Noun
+%<adj%>         ! Adjective
+%<adv%>         ! Adverb
+%<num%>         ! Numeral
+%<post%>        ! Postpositions
+
+%<nom%>         ! Nominative                  !
+%<acc%>         ! Accusative                  !
+%<dat%>         ! Dative                      !
+%<soc%>         ! Sociative                   ! 
+%<gen%>         ! Genitive                    ! 
+%<ins%>         ! Instrumental                ! 
+%<loc%>         ! Locative                    ! 
+%<voc%>         ! Vocative                    !
 
 ! Number morphology
-%<pl%>  ! Plural
-%<sg%>  ! Singular
+%<pl%>          ! Plural
+%<sg%>          ! Singular
 
 ! Other symbols
-%{X%}   ! Infix Consonant
+%{X%}           ! Infix Consonant
 
-%>      ! Morpheme boundary
+%>              ! Morpheme boundary
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -35,18 +42,80 @@ Adverbs ;
 
 LEXICON Noun
 
-%<n%>%<sg%>: # ;
-%<n%>%<pl%>:%>%{X%}கள் # ;
+%<n%>%<sg%>%<nom%>: # ;
+%<n%>%<sg%>%<acc%>: NounAcc ;
+%<n%>%<sg%>%<ins%>: NounIns ;
+%<n%>%<sg%>%<soc%>: NounSoc ;
+%<n%>%<sg%>%<dat%>: NounDat ;
+%<n%>%<sg%>%<gen%>: NounGen ;
+%<n%>%<sg%>%<loc%>: NounLoc ;
+%<n%>%<sg%>: NounPost ;
+
+! Plural
+%<n%>%<pl%>%<nom%>:%>%{X%}கள் # ;
+%<n%>%<pl%>%<acc%>:%>%{X%}கள் NounAcc ;
+%<n%>%<pl%>%<ins%>:%>%{X%}கள் NounIns ;
+%<n%>%<pl%>%<soc%>:%>%{X%}கள் NounSoc ;
+%<n%>%<pl%>%<dat%>:%>%{X%}களு NounDat ;
+%<n%>%<pl%>%<gen%>:%>%{X%}கள் NounGen ;
+%<n%>%<pl%>%<loc%>:%>%{X%}கள் NounLoc ;
+%<n%>%<pl%>:%>%{X%}கள் NounPost ;
+%<n%>%<pl%>:%>%{X%}கள் NounPlPost ;
 
 LEXICON Num
 
 %<num%>: # ;
 
+LEXICON NounAcc
+%<post%>:%»ஐ # ;  ! "ai" ! ""
 
-LEXICON SPost
+LEXICON NounIns
+%<post%>:%»ஆல் # ;  ! "aal" ! "by"
+%<post%>:கொண்டு # ;  ! "kondu" ! "by"
 
-%<spost%>: # ;
+LEXICON NounSoc
+%<post%>:%»உடன் # ;  ! "udan" ! "with"
+%<post%>:%»ஒடு # ; ! "odu" ! "with"
+%<post%>:%»ஓடு # ; ! "oodu" ! "with"
 
+LEXICON NounDat
+%<post%>:க்கு # ;  ! "ku" ! "to"
+%<post%>:க்காக # ;  ! "kaaka" ! "to"
+
+LEXICON NounGen
+%<post%>:%»அது # ;  ! "athu" ! "'s'"
+%<post%>:%»இன் # ;  ! "in" ! "of"
+%<post%>:%»இனுடைய # ;  ! "inudaiya" ! "of"
+%<post%>:%»உடைய # ;  ! "udaiya" ! "of"
+
+LEXICON NounLoc
+%<post%>:%»இல் # ;  ! "il" ! "at, in"
+%<post%>:%»இடம் # ;  ! "idam" ! "at, in"
+%<post%>:கண் # ;  ! "kan" ! "at, in"
+
+
+LEXICON NounPost
+
+! NonSeperable
+%<post%>:%»இன்றி # ;  ! "inri" ! "without"
+
+! Seperable
+%<post%>:%»அடியில் # ;  ! "adiyil" ! "beneath, under"
+%<post%>:%»அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
+%<post%>:%»அருகே # ;  ! "aruke" ! "in"
+%<post%>:%»இருந்து # ;  ! "irundhu" ! "from"
+%<post%>:%»உள்ளே # ;  ! "ulle" ! "in, inside of, inside, within, nto"
+
+
+LEXICON NounPlPost
+
+%<post%>:%»இடையில் # ;  ! "idaiyil" ! "among"
+%<post%>:%»இடையே # ;  ! "idaiye" ! "between"
+
+
+LEXICON Post
+
+%<post%>: # ;
 
 LEXICON Adj
 
@@ -91,11 +160,10 @@ LEXICON NounStems
 காடு Noun ; ! "kaadu"  ! "forest"
 காரியாலயம் Noun ;  ! "kaariyaalayam" ! "office"
 கால்சட்டை Noun ;  ! "kaalsattai" ! "pants"
-கால்பந்தாட்டம் Noun ;  ! "kaalpanthaattam" ! "soccer"
 கால்பந்து Noun ;  ! "kaalpanthu" ! "football"
 காலணி Noun ;  ! "kaalani" ! "shoes"
-காலுறைகள் Noun ;  ! "kaaluraikal" ! "socks"
-கின்னம் Noun ;  ! "kinnam" ! "cup"
+காலுறை Noun ;  ! "kaalurai" ! "socks"
+கிண்ணம் Noun ;  ! "kinnam" ! "cup"
 குடும்பம் Noun ; ! "kudumbam" ! "family"
 குடை Noun ;  ! "kudai" ! "umbrella"
 குழந்தை Noun ;  ! "kuzhanthai" ! "baby"
@@ -194,68 +262,62 @@ LEXICON Numerals
 
 LEXICON Postpositions
 
-அடியில் SPost ;  ! "adiyil" ! "beneath, under"
-அடுத்து SPost ;  ! "aduththu" ! "next"
-அதிகமாய் SPost ;  ! "athikamaai" ! "over"
-அப்பால் SPost ;  ! "appaal" ! "beyond"
-அப்பொழுதிலிருந்து SPost ;  ! "appozhuthilirundhu" ! "since"
-அருகில் SPost ;  ! "arukil" ! "at, by, close to, near to, near"
-அருகே SPost ;  ! "aruke" ! "in"
-ஆகையால் SPost ;  ! "aakaiyaal" ! "since"
-ஆயினும் SPost ;  ! "aayinum" ! "despite"
-ஆல் SPost ;  ! "aal" ! "by"
-ஆனால் SPost ;  ! "aanaal" ! "but"
-இடத்தில் SPost ;  ! "idaththil" ! "at"
-இடையில் SPost ;  ! "idaiyil" ! "among"
-இடையே SPost ;  ! "idaiye" ! "between"
-இணங்க SPost ;  ! "inanga" ! "according to"
-இருந்தபோதிலும் SPost ;  ! "irunthapothilum" ! "in spite of"
-இருந்து SPost ;  ! "irundhu" ! "from"
-இல் SPost ;  ! "il" ! "at, in, of"
-இல்லாமல் SPost ;  ! "illaamal" ! "without"
-இன் SPost ;  ! "in" ! "of"
-இன்றி SPost ;  ! "inri" ! "without"
-உட்பக்கம் SPost ;  ! "utpakkam" ! "inside"
-உடன் SPost ;  ! "udan" ! "with"
-உடைய SPost ;  ! "udaiya" ! "of"
-உள்நோக்கி SPost ;  ! "ulnokki" ! "into"
-உள்ளே SPost ;  ! "ulle" ! "in, inside of, inside, within, nto"
-எதிராக SPost ;  ! "yethiraaga" ! "against"
-எதிரே SPost ;  ! "yethire" ! "before"
-ஏறத்தாழ SPost ;  ! "yeraththaazha" ! "around"
-ஏனென்றால் SPost ;  ! "yenenraal" ! "for"
-ஓடு SPost ;  ! "odu" ! "with"
-காட்டிலும் SPost ;  ! "kaattilum" ! "than"
-காரணமாக SPost ;  ! "kaaranamaaga" ! "because of, due to, for"
-கீழே SPost ;  ! "keezhe" ! "below, beneath, down, under"
-குறித்து SPost ;  ! "kuriththu" ! "about, as far as, for"
-குறுக்காக SPost ;  ! "kurukkaaga" ! "across"
-குறுக்கே SPost ;  ! "kurukke" ! "through"
-கூட SPost ;  ! "koota" ! "plus"
-சார்பாய் SPost ;  ! "saarpaai" ! "on behalf of"
-சுற்றி SPost ;  ! "sutri" ! "around"
-தவிர SPost ;  ! "thavira" ! "except for, "except"
-தொடங்கி SPost ;  ! "thodanki" ! "from"
-நாடி SPost ;  ! "naadi" ! "toward"
-நோக்கி SPost ;  ! "nokki" ! "toward"
-பக்கத்தில் SPost ;  ! "pakkaththil" ! "close to"
-பக்கத்தில் SPost ;  ! "pakkaththil" ! "next to"
-பதிலாக SPost ;  ! "pathilaaga" ! "instead of"
-பிறகு SPost ;  ! "piraku" ! "after"
-பின்னால் SPost ;  ! "pinnaal" ! "behind"
-பொருட்டு SPost ;  ! "poruttu" ! "toward"
-போலில்லாத SPost ;  ! "polillaadha" ! "unlike"
-முதலாய் SPost ;  ! "muthalaai" ! "from"
-முன்பாக SPost ;  ! "munpaaga" ! "before, prior to, in front of"
-மூலமாய் SPost ;  ! "moolamaai" ! "through"
-மேலும் SPost ;  ! "melum" ! "as well as, in addition to, above, on, over, up"
-வரையில் SPost ;  ! "varaiyil" ! "as far as, till, to"
-வரையிலும் SPost ;  ! "varaiyilum" ! "until"
-வழியாக SPost ;  ! "vazhiyaaga" ! "via"
-விட SPost ;  ! "vida" ! "than"
-வெளிப்புறத்தில் SPost ;  ! "velippuraththil" ! "outside"
-வெளியே SPost ;  ! "veliye" ! "out, outside of, outside"
-வேறு SPost ;  ! "veru" ! "unlike"
+அடியில் Post ;  ! "adiyil" ! "beneath, under"
+அடுத்து Post ;  ! "aduththu" ! "next"
+அதிகமாய் Post ;  ! "athikamaai" ! "over"
+அப்பால் Post ;  ! "appaal" ! "beyond"
+அப்பொழுதிலிருந்து Post ;  ! "appozhuthilirundhu" ! "since"
+அருகில் Post ;  ! "arukil" ! "at, by, close to, near to, near"
+அருகே Post ;  ! "aruke" ! "in"
+ஆகையால் Post ;  ! "aakaiyaal" ! "since"
+ஆயினும் Post ;  ! "aayinum" ! "despite"
+ஆனால் Post ;  ! "aanaal" ! "but"
+இடத்தில் Post ;  ! "idaththil" ! "at"
+இடையில் Post ;  ! "idaiyil" ! "among"
+இடையே Post ;  ! "idaiye" ! "between"
+இணங்க Post ;  ! "inanga" ! "according to"
+இருந்தபோதிலும் Post ;  ! "irunthapothilum" ! "in spite of"
+இருந்து Post ;  ! "irundhu" ! "from"
+இல்லாமல் Post ;  ! "illaamal" ! "without"
+உட்பக்கம் Post ;  ! "utpakkam" ! "inside"
+உடன் Post ;  ! "udan" ! "with"
+உள்நோக்கி Post ;  ! "ulnokki" ! "into"
+உள்ளே Post ;  ! "ulle" ! "in, inside of, inside, within, nto"
+எதிராக Post ;  ! "yethiraaga" ! "against"
+எதிரே Post ;  ! "yethire" ! "before"
+ஏறத்தாழ Post ;  ! "yeraththaazha" ! "around"
+ஏனென்றால் Post ;  ! "yenenraal" ! "for"
+காட்டிலும் Post ;  ! "kaattilum" ! "than"
+காரணமாக Post ;  ! "kaaranamaaga" ! "because of, due to, for"
+கீழே Post ;  ! "keezhe" ! "below, beneath, down, under"
+குறித்து Post ;  ! "kuriththu" ! "about, as far as, for"
+குறுக்காக Post ;  ! "kurukkaaga" ! "across"
+குறுக்கே Post ;  ! "kurukke" ! "through"
+கூட Post ;  ! "koota" ! "plus"
+சார்பாய் Post ;  ! "saarpaai" ! "on behalf of"
+சுற்றி Post ;  ! "sutri" ! "around"
+தவிர Post ;  ! "thavira" ! "except for, "except"
+தொடங்கி Post ;  ! "thodanki" ! "from"
+நாடி Post ;  ! "naadi" ! "toward"
+நோக்கி Post ;  ! "nokki" ! "toward"
+பக்கத்தில் Post ;  ! "pakkaththil" ! "close to"
+பக்கத்தில் Post ;  ! "pakkaththil" ! "next to"
+பதிலாக Post ;  ! "pathilaaga" ! "instead of"
+பிறகு Post ;  ! "piraku" ! "after"
+பின்னால் Post ;  ! "pinnaal" ! "behind"
+பொருட்டு Post ;  ! "poruttu" ! "toward"
+போலில்லாத Post ;  ! "polillaadha" ! "unlike"
+முதலாய் Post ;  ! "muthalaai" ! "from"
+முன்பாக Post ;  ! "munpaaga" ! "before, prior to, in front of"
+மூலமாய் Post ;  ! "moolamaai" ! "through"
+மேலும் Post ;  ! "melum" ! "as well as, in addition to, above, on, over, up"
+வரையில் Post ;  ! "varaiyil" ! "as far as, till, to"
+வரையிலும் Post ;  ! "varaiyilum" ! "until"
+வழியாக Post ;  ! "vazhiyaaga" ! "via"
+விட Post ;  ! "vida" ! "than"
+வெளிப்புறத்தில் Post ;  ! "velippuraththil" ! "outside"
+வெளியே Post ;  ! "veliye" ! "out, outside of, outside"
+வேறு Post ;  ! "veru" ! "unlike"
 
 
 LEXICON Adjectives

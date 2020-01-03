@@ -1,7 +1,7 @@
 Alphabet
-    அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன
+    அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ க ங ச ஞ	ட ண த ந ப ம ய ர ல வ	ழ ள ற ன
    ா ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ  ௗ   ்
-     %{X%}:0 %>:0;
+     %{X%}:0 %>:0 %»:0;
 
 Sets
 
@@ -12,7 +12,9 @@ Idaiyinam = ய ர ல வ ழ ள;
 
 RemConsonant = Mellinam ல ;
 
-Vowel = அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஔ ஃ ;
+Vowel = அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ ;
+VowWithSym = ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ;
+VowSym = ா ி  ீ  ு  ூ  ெ  ே  ை  ொ  ோ  ௌ ;
 ShortVowSym = ி  ு  ெ  ை  ொ;
 LongVowSym =  ா  ீ  ூ  ே  ோ  ௌ;
 
@@ -38,7 +40,25 @@ Rules
 
 "Removing Consonant When adding suffix"
 Vx:0 <=> _ ்: %>: ;
-    where Vx in ( RemConsonant ) ;
+    where Vx in RemConsonant ;
+
+"Removing Kurru When adding Suffix"
+  ்:0 <=> _ %»: ;
+
+"Removing அ When adding after a consonant"
+அ:0 <=> %»: _ ;
+
+"Inserting ய"
+0:ய <=> ை: _ %»:;
+         ி: _ %»:;
+
+"Removing  ு"
+ ு:0 <=> ட: _ %»:;
+
+
+"Change to VowSymbols When Preceded by a Consonant"
+Vx:Vy <=> %»: _ ;
+          where Vx in VowWithSym Vy in VowSym matched;
 
 
 ! Resources:
