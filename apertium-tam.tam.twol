@@ -33,6 +33,13 @@ Vx:Vy <=> %»: _ ;
 
 "Ending with ல"
 %{X%}:ற <=> ல:  ்: %>: _ ;
+              except
+               ி: ல:  ்: %>: _ ;
+               ோ: ல:  ்: %>: _ ;
+
+"Ending with ல"
+%{X%}:ல <=> Vx: ல:  ்: %>: _ ;
+              where Vx in ( ி  ோ ) ;
 
 "Removing அ When adding after a consonant"
 அ:0 <=> %»: _ ;
