@@ -21,6 +21,10 @@ LongVowSym =  ா  ீ  ூ  ே  ோ  ௌ;
 
 Rules 
 
+"Change to VowSymbols When Preceded by a Consonant"
+Vx:Vy <=> %»: _ ;
+          where Vx in VowWithSym Vy in VowSym matched;
+
 "Ending with Vowels"
 %{X%}:க <=> LongVowSym: %>: _ ;
 
@@ -30,36 +34,55 @@ Rules
 "Ending with ல"
 %{X%}:ற <=> ல:  ்: %>: _ ;
 
-"Adding Kurru"
-0:Vy <=> LongVowSym: %>: %{X%}: _ க: ;
-         RemConsonant: ்: %>: %{X%}: _ க: ;
-         where Vy in (  ் ) ;
-
-"Removing Consonant When adding Suffix"
-  ்:0 <=> RemConsonant: _ %>: ;
-
-"Removing Consonant When adding suffix"
-Vx:0 <=> _ ்: %>: ;
-    where Vx in RemConsonant ;
-
-"Removing Kurru When adding Suffix"
-  ்:0 <=> _ %»: ;
-
 "Removing அ When adding after a consonant"
 அ:0 <=> %»: _ ;
 
 "Inserting ய"
-0:ய <=> ை: _ %»:;
-         ி: _ %»:;
+%{X%}:ய <=> ை: _ %»:;
+             ி: _ %»:;
+
+"Ending with ல"
+%{X%}:வ <=>  ா: _ %»:;
+
+"Inserting ல"
+%{X%}:ல <=> Vallinam: ல:   ்: _ %»:;
+            except 
+            ட: ல:   ்: _ %»:;
+
+"Changing to த"
+%{X%}:த <=> ம:   ்: _ %»:;
+
+"Changing to த"
+ம:த <=> _   ்: %{X%}: %»:;
+
+"Changing to ட"
+%{X%}:ட <=> VowSym: ட:  ு: _ %»:;
 
 "Removing  ு"
- ு:0 <=> ட: _ %»:;
+ ு:Vx <=> VowSym: ட: _ %{X%}: %»:;
+          where Vx in (  ் ) ;
+
+"Removing  ு"
+ ு:0 <=> வ: _ %{X%}: %»:;
+          க: _ %{X%}: %»:;
+           ்: ட: _ %{X%}: %»:;
+
+"Adding Kutru"
+0:Vy <=> LongVowSym: %>: %{X%}: _ க: ;
+         RemConsonant: ்: %>: %{X%}: _ க: ;
+         where Vy in (  ் ) ;
+
+"Removing kutru When adding Suffix"
+  ்:0 <=> RemConsonant: _ %>: ;
+          _ %{X%}: %»:;
+          except 
+          ப: ல: _ %{X%}: %»:;
+          ம: _ %{X%}: %»:;
 
 
-"Change to VowSymbols When Preceded by a Consonant"
-Vx:Vy <=> %»: _ ;
-          where Vx in VowWithSym Vy in VowSym matched;
-
+"Removing Consonant When adding suffix"
+Vx:0 <=> _ ்: %>: ;
+    where Vx in RemConsonant ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Enter_twol

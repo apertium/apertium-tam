@@ -56,7 +56,7 @@ LEXICON Noun
 %<n%>%<pl%>%<acc%>:%>%{X%}கள் NounAcc ;
 %<n%>%<pl%>%<ins%>:%>%{X%}கள் NounIns ;
 %<n%>%<pl%>%<soc%>:%>%{X%}கள் NounSoc ;
-%<n%>%<pl%>%<dat%>:%>%{X%}களு NounDat ;
+%<n%>%<pl%>%<dat%>:%>%{X%}கள் NounDat ;
 %<n%>%<pl%>%<gen%>:%>%{X%}கள் NounGen ;
 %<n%>%<pl%>%<loc%>:%>%{X%}கள் NounLoc ;
 %<n%>%<pl%>:%>%{X%}கள் NounPost ;
@@ -67,50 +67,50 @@ LEXICON Num
 %<num%>: # ;
 
 LEXICON NounAcc
-%<post%>:%»ஐ # ;  ! "ai" ! ""
+%<post%>:%{X%}%»ஐ # ;  ! "ai" ! ""
 
 LEXICON NounIns
-%<post%>:%»ஆல் # ;  ! "aal" ! "by"
+%<post%>:%{X%}%»ஆல் # ;  ! "aal" ! "by"
 %<post%>:கொண்டு # ;  ! "kondu" ! "by"
 
 LEXICON NounSoc
-%<post%>:%»உடன் # ;  ! "udan" ! "with"
-%<post%>:%»ஒடு # ; ! "odu" ! "with"
-%<post%>:%»ஓடு # ; ! "oodu" ! "with"
+%<post%>:%{X%}%»உடன் # ;  ! "udan" ! "with"
+%<post%>:%{X%}%»ஒடு # ; ! "odu" ! "with"
+%<post%>:%{X%}%»ஓடு # ; ! "oodu" ! "with"
 
 LEXICON NounDat
-%<post%>:க்கு # ;  ! "ku" ! "to"
-%<post%>:க்காக # ;  ! "kaaka" ! "to"
+%<post%>:%{X%}%»உக்கு # ;  ! "ukku" ! "to"
+%<post%>:%{X%}%»உக்காக # ;  ! "ukkaaka" ! "to"
 
 LEXICON NounGen
-%<post%>:%»அது # ;  ! "athu" ! "'s'"
-%<post%>:%»இன் # ;  ! "in" ! "of"
-%<post%>:%»இனுடைய # ;  ! "inudaiya" ! "of"
-%<post%>:%»உடைய # ;  ! "udaiya" ! "of"
+%<post%>:%{X%}%»அது # ;  ! "athu" ! "'s'"
+%<post%>:%{X%}%»இன் # ;  ! "in" ! "of"
+%<post%>:%{X%}%»இனுடைய # ;  ! "inudaiya" ! "of"
+%<post%>:%{X%}%»உடைய # ;  ! "udaiya" ! "of"
 
 LEXICON NounLoc
-%<post%>:%»இல் # ;  ! "il" ! "at, in"
-%<post%>:%»இடம் # ;  ! "idam" ! "at, in"
+%<post%>:%{X%}%»இல் # ;  ! "il" ! "at, in"
+%<post%>:%{X%}%»இடம் # ;  ! "idam" ! "at, in"
 %<post%>:கண் # ;  ! "kan" ! "at, in"
 
 
 LEXICON NounPost
 
 ! NonSeperable
-%<post%>:%»இன்றி # ;  ! "inri" ! "without"
+%<post%>:%{X%}%»இன்றி # ;  ! "inri" ! "without"
 
 ! Seperable
-%<post%>:%»அடியில் # ;  ! "adiyil" ! "beneath, under"
-%<post%>:%»அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
-%<post%>:%»அருகே # ;  ! "aruke" ! "in"
-%<post%>:%»இருந்து # ;  ! "irundhu" ! "from"
-%<post%>:%»உள்ளே # ;  ! "ulle" ! "in, inside of, inside, within, nto"
+%<post%>:%{X%}%»அடியில் # ;  ! "adiyil" ! "beneath, under"
+%<post%>:%{X%}%»அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
+%<post%>:%{X%}%»அருகே # ;  ! "aruke" ! "in"
+%<post%>:%{X%}%»இலிருந்து # ;  ! "ilirundhu" ! "from"
+%<post%>:%{X%}%»உள்ளே # ;  ! "ulle" ! "in, inside of, inside, within, nto"
 
 
 LEXICON NounPlPost
 
-%<post%>:%»இடையில் # ;  ! "idaiyil" ! "among"
-%<post%>:%»இடையே # ;  ! "idaiye" ! "between"
+%<post%>:%{X%}%»இடையில் # ;  ! "idaiyil" ! "among"
+%<post%>:%{X%}%»இடையே # ;  ! "idaiye" ! "between"
 
 
 LEXICON Post
