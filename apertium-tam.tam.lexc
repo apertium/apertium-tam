@@ -3,11 +3,11 @@
 Multichar_Symbols
 
 ! Part of speech categories
-%<n%>           ! Noun
-%<adj%>         ! Adjective
-%<adv%>         ! Adverb
-%<num%>         ! Numeral
-%<post%>        ! Postpositions
+%<n%>           ! Noun                        | பெயர்ச்சொல்
+%<adj%>         ! Adjective                   | அடைமொழி
+%<adv%>         ! Adverb                      | வினையடை
+%<num%>         ! Numeral                     | எண்
+%<post%>        ! Postposition                | விகுதி
 
 %<nom%>         ! Nominative                  ! முதல் வேற்றுமை/ எழுவாய் வேற்றுமை
 %<acc%>         ! Accusative                  ! இரண்டாம் வேற்றுமை
@@ -19,13 +19,14 @@ Multichar_Symbols
 %<voc%>         ! Vocative                    ! எட்டாம் வேற்றுமை/ விளி வேற்றுமை
 
 ! Number morphology
-%<pl%>          ! Plural
-%<sg%>          ! Singular
+%<pl%>          ! Plural                      ! ஒருமை
+%<sg%>          ! Singular                    ! பன்மை
 
 ! Other symbols
-%{X%}           ! Infix Consonant
+%{X%}           ! Infix Consonant             ! மெய்யெழுத்து இடைவைப்பு
 
-%>              ! Morpheme boundary
+%>              ! Morpheme boundary           ! உருபன் எல்லை
+%»              ! Clitic boundary             ! இடைச்சொல் எல்லை
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
