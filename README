@@ -55,10 +55,10 @@ commands should work:
 
 ```console
 $ echo "TODO: சோதனை வசனம்" | apertium -d . tam-morph
-TODO: test analysis result
+^TODO/*TODO$: ^சோதனை/சோதனை<n><sg><nom>$ ^வசனம்/வசனம்<n><sg><nom>$
 
 $ echo "TODO: சோதனை வசனம்" | apertium -d . tam-tagger
-TODO: test tagger result
+^TODO/*TODO$: ^சோதனை/சோதனை<n><sg><nom>$ ^வசனம்/வசனம்<n><sg><nom>$
 ```
 
 Files and data
