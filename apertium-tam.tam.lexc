@@ -9,14 +9,14 @@ Multichar_Symbols
 %<num%>         ! Numeral
 %<post%>        ! Postpositions
 
-%<nom%>         ! Nominative                  !
-%<acc%>         ! Accusative                  !
-%<dat%>         ! Dative                      !
-%<soc%>         ! Sociative                   ! 
-%<gen%>         ! Genitive                    ! 
-%<ins%>         ! Instrumental                ! 
-%<loc%>         ! Locative                    ! 
-%<voc%>         ! Vocative                    !
+%<nom%>         ! Nominative                  ! முதல் வேற்றுமை/ எழுவாய் வேற்றுமை
+%<acc%>         ! Accusative                  ! இரண்டாம் வேற்றுமை
+%<dat%>         ! Dative                      ! நான்காம் வேற்றுமை
+%<soc%>         ! Sociative                   ! மூன்றாம் வேற்றுமை-கருத்தா பொருள்
+%<gen%>         ! Genitive                    ! ஐந்தாம் வேற்றுமை
+%<ins%>         ! Instrumental                ! மூன்றாம் வேற்றுமை-கருவிப் பொருள்
+%<loc%>         ! Locative                    ! ஏழாம் வேற்றுமை/ கண் வேற்றுமை
+%<voc%>         ! Vocative                    ! எட்டாம் வேற்றுமை/ விளி வேற்றுமை
 
 ! Number morphology
 %<pl%>          ! Plural
@@ -152,6 +152,7 @@ LEXICON NounStems
 கத்தரிக்கோல் Noun ;  ! "kaththarikkol" ! "scissors"
 கத்தி Noun ;  ! "kaththi" ! "knife"
 கரண்டி Noun ;  ! "karandi" ! "spoon"
+கல் Noun ;  ! "kal" ! "stone"
 கலை Noun ;  ! "kalai" ! "art"
 கவைமுள் Noun ;  ! "kavaimul" ! "fork"
 கழிவறை Noun ;  ! "kazhivarai" ! "toilet"
@@ -182,6 +183,7 @@ LEXICON NounStems
 சிறியசட்டை Noun ;  ! "siriyasattai" ! "jacket"
 சுவர் Noun ;  ! "suvar" ! "wall"
 செய்தித்தாள் Noun ;  ! "seithiththaal" ! "newspaper"
+சோதனை Noun ;  ! "sothanai" ! "test"
 தட்டு Noun ;  ! "thattu" ! "plate"
 தந்தை Noun ;  ! "thanthai" ! "father"
 தபால்காரர் Noun ;  ! "thapaalkaarar" ! "postman"
@@ -227,6 +229,7 @@ LEXICON NounStems
 மேற்சட்டை Noun ;  ! "mersattai" ! "coat"
 மை Noun ;  ! "mai" ! "ink"
 வங்கி Noun ;  ! "vanki" ! "bank"
+வசனம் Noun ;  ! "vasanam" ! "sentence"
 வரைபடம் Noun ;  ! "varaipadam" ! "map"
 வானம் Noun ;  ! "vaanam" ! "sky"
 விஞ்ஞானம் Noun ;  ! "vinnaanam" ! "science"

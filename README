@@ -54,10 +54,10 @@ If you are in the source directory after running make, the following
 commands should work:
 
 ```console
-$ echo "TODO: test sentence" | apertium -d . tam-morph
+$ echo "TODO: சோதனை வசனம்" | apertium -d . tam-morph
 TODO: test analysis result
 
-$ echo "TODO: test sentence" | apertium -d . tam-tagger
+$ echo "TODO: சோதனை வசனம்" | apertium -d . tam-tagger
 TODO: test tagger result
 ```
 
@@ -65,9 +65,11 @@ Files and data
 -------------------------------------------------------------------------------
 
 * [`apertium-tam.tam.lexc`](apertium-tam.tam.lexc) - Morphotactic dictionary
-* [`apertium-tam.tam.twol`](apertium-tam.tam.twol) - Morphophonological rules* [`apertium-tam.tam.rlx`](apertium-tam.tam.rlx) - Constraint Grammar disambiguation rules
+* [`apertium-tam.tam.twol`](apertium-tam.tam.twol) - Morphophonological rules
+* [`apertium-tam.tam.rlx`](apertium-tam.tam.rlx) - Constraint Grammar disambiguation rules
 * [`apertium-tam.post-tam.dix`](apertium-tam.post-tam.dix) - Post-generator
-* [`tam.prob`](tam.prob) - Tagger model* [`modes.xml`](modes.xml) - Translation modes
+* [`tam.prob`](tam.prob) - Tagger model
+* [`modes.xml`](modes.xml) - Translation modes
 
 For more information
 -------------------------------------------------------------------------------
