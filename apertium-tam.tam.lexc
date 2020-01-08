@@ -22,6 +22,12 @@ Multichar_Symbols
 %<pl%>          ! Plural                      ! ஒருமை
 %<sg%>          ! Singular                    ! பன்மை
 
+%<pquot%>       ! Quote marker                ! மேற்கோள் குறி
+%<sent%>        ! Sentence boundary           ! வசன எல்லை
+%<cm%>          ! Comma                       ! காற்புள்ளி
+%<lpar%>        !
+%<rpar%>        !
+
 ! Other symbols
 %{X%}           ! Infix Consonant             ! மெய்யெழுத்து இடைவைப்பு
 
@@ -40,6 +46,7 @@ Numerals ;
 Postpositions ;
 Adjectives ;
 Adverbs ;
+Punctuations ;
 
 LEXICON Noun
 
@@ -442,9 +449,20 @@ LEXICON Adverbs
 வழக்கமாக Adv ;  ! "vazhakkamaaga" ! "usually"
 விரைவில் Adv ;  ! "viraivil" ! "soon"
 வெளியே Adv ;  ! "veliye" ! "out"
-வேகமாக Adv ;  ! "vekamaaga" ! "fast"
-வேகமாக Adv ;  ! "vekamaaga" ! "quickly"
+வேகமாக Adv ;  ! "vekamaaga" ! "fast, quickly"
 
+LEXICON Punctuations
+
+%"%<pquot%>:%" # ; 
+%,%<cm%>:%, # ;
+%.%<sent%>:%. # ;
+%!%<sent%>:%! # ;
+%?%<sent%>:%? # ;
+%:%<sent%>:%: # ; 
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
 
 ! Resources:
 ! http://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
