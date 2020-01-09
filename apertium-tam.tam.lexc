@@ -41,6 +41,7 @@ Multichar_Symbols
 
 LEXICON Root
 
+Pronouns ;
 NounStems ;
 Numerals ;
 Postpositions ;
@@ -50,6 +51,7 @@ Punctuations ;
 
 LEXICON Noun
 
+%<n%>%<sg%>: # ;
 %<n%>%<sg%>%<nom%>: # ;
 %<n%>%<sg%>%<acc%>: NounAcc ;
 %<n%>%<sg%>%<ins%>: NounIns ;
@@ -60,6 +62,7 @@ LEXICON Noun
 %<n%>%<sg%>: NounPost ;
 
 ! Plural
+%<n%>%<pl%>:%>%{X%}கள் # ;
 %<n%>%<pl%>%<nom%>:%>%{X%}கள் # ;
 %<n%>%<pl%>%<acc%>:%>%{X%}கள் NounAcc ;
 %<n%>%<pl%>%<ins%>:%>%{X%}கள் NounIns ;
@@ -129,14 +132,86 @@ LEXICON Adj
 
 %<adj%>: # ;
 
-
 LEXICON Adv
 
 %<adv%>: # ;
 
+LEXICON PronPersNaan
+
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>: # ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<acc%>: NounAcc ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<ins%>: NounIns ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<soc%>: NounSoc ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<dat%>: NounDat ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<gen%>: NounGen ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<loc%>: NounLoc ;
+
+LEXICON PronPersAvan
+
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>: # ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<acc%>: NounAcc ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<ins%>: NounIns ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<soc%>: NounSoc ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<dat%>: NounDat ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<gen%>: NounGen ;
+%<prn%>%<pers%>%<p3%>%<m%>%<sg%>%<loc%>: NounLoc ;
+
+LEXICON PronPersAval
+
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>: # ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<acc%>: NounAcc ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<ins%>: NounIns ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<soc%>: NounSoc ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<dat%>: NounDat ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<gen%>: NounGen ;
+%<prn%>%<pers%>%<p3%>%<f%>%<sg%>%<loc%>: NounLoc ;
+
+LEXICON PronPersAvar
+
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>: # ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<acc%>: NounAcc ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<ins%>: NounIns ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<soc%>: NounSoc ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<dat%>: NounDat ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<gen%>: NounGen ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<sg%>%<loc%>: NounLoc ;
+
+LEXICON PronPersAvarkal
+
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>: # ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<acc%>: NounAcc ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<ins%>: NounIns ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<soc%>: NounSoc ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<dat%>: NounDat ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<gen%>: NounGen ;
+%<prn%>%<pers%>%<p3%>%<mf%>%<pl%>%<loc%>: NounLoc ;
+
+LEXICON PronDemAthu
+
+%<prn%>%<dem%>%<sg%>%<nom%>: # ; 
+
+LEXICON PronPersNeengal
+
+%<prn%>%<pers%>%<p2%>%<mf%>%<pl%>%<nom%>: # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Pronouns
+
+நான் PronPersNaan ;  ! "avan" ! "I"
+நீங்கள் PronPersNeengal ;  ! "avan" ! "you"
+அவன் PronPersAvan ;  ! "avan" ! "he""
+அவர் PronPersAvar ;  ! "avan" ! "he"
+அவள் PronPersAval ;  ! "avan" ! "she"
+அவர்கள் PronPersAvarkal ;  ! "avan" ! "they"
+அது PronDemAthu ;  ! "avan" ! "it"
 
 LEXICON NounStems
 
