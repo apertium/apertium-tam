@@ -78,31 +78,31 @@ LEXICON Num
 %<num%>: # ;
 
 LEXICON NounAcc
-%<post%>:%{X%}%»ஐ # ;  ! "ai" ! ""
+%+ஐ%<post%>:%{X%}%»ஐ # ;  ! "ai" ! ""
 
 LEXICON NounIns
-%<post%>:%{X%}%»ஆல் # ;  ! "aal" ! "by"
-%<post%>:கொண்டு # ;  ! "kondu" ! "by"
+%+ஆல்%<post%>:%{X%}%»ஆல் # ;  ! "aal" ! "by"
+%+கொண்டு%<post%>:கொண்டு # ;  ! "kondu" ! "by"
 
 LEXICON NounSoc
-%<post%>:%{X%}%»உடன் # ;  ! "udan" ! "with"
-%<post%>:%{X%}%»ஒடு # ; ! "odu" ! "with"
-%<post%>:%{X%}%»ஓடு # ; ! "oodu" ! "with"
+%+உடன்%<post%>:%{X%}%»உடன் # ;  ! "udan" ! "with"
+%+ஒடு%<post%>:%{X%}%»ஒடு # ; ! "odu" ! "with"
+%+ஓடு%<post%>:%{X%}%»ஓடு # ; ! "oodu" ! "with"
 
 LEXICON NounDat
-%<post%>:%{X%}%»உக்கு # ;  ! "ukku" ! "to"
-%<post%>:%{X%}%»உக்காக # ;  ! "ukkaaka" ! "to"
+%+உக்கு%<post%>:%{X%}%»உக்கு # ;  ! "ukku" ! "to"
+%+உக்காக%<post%>:%{X%}%»உக்காக # ;  ! "ukkaaka" ! "to"
 
 LEXICON NounGen
-%<post%>:%{X%}%»அது # ;  ! "athu" ! "'s'"
-%<post%>:%{X%}%»இன் # ;  ! "in" ! "of"
-%<post%>:%{X%}%»இனுடைய # ;  ! "inudaiya" ! "of"
-%<post%>:%{X%}%»உடைய # ;  ! "udaiya" ! "of"
+%+அது%<post%>:%{X%}%»அது # ;  ! "athu" ! "'s'"
+%+இன்%<post%>:%{X%}%»இன் # ;  ! "in" ! "of"
+%+இனுடைய%<post%>:%{X%}%»இனுடைய # ;  ! "inudaiya" ! "of"
+%+உடைய%<post%>:%{X%}%»உடைய # ;  ! "udaiya" ! "of"
 
 LEXICON NounLoc
-%<post%>:%{X%}%»இல் # ;  ! "il" ! "at, in"
-%<post%>:%{X%}%»இடம் # ;  ! "idam" ! "at, in"
-%<post%>:கண் # ;  ! "kan" ! "at, in"
+%+இல்%<post%>:%{X%}%»இல் # ;  ! "il" ! "at, in"
+%+இடம்%<post%>:%{X%}%»இடம் # ;  ! "idam" ! "at, in"
+%+கண்%<post%>:கண் # ;  ! "kan" ! "at, in"
 
 
 LEXICON NounPost
