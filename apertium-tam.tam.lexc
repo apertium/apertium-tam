@@ -47,7 +47,9 @@ Numerals ;
 Postpositions ;
 Adjectives ;
 Adverbs ;
+Verbs ;
 Punctuations ;
+Determiners ;
 
 LEXICON Noun
 
@@ -199,6 +201,59 @@ LEXICON PronPersNeengal
 
 %<prn%>%<pers%>%<p2%>%<mf%>%<pl%>%<nom%>: # ;
 
+LEXICON DetIndSg
+%<det%>%<ind%>%<sg%>: # ;
+
+LEXICON VbEri
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
+%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
+%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:கிறான் # ;
+%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறீர்கள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+
+%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:ந்தேன் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:ந்தாய் # ;
+%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:ந்தான் # ;
+%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:ந்தாள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:ந்தது # ;
+
+LEXICON VbEdu
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
+%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
+%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
+%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
+
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
+
+LEXICON VbPara
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
+%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
+%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
+%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
+
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
+
+LEXICON VbVirumpu
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
+%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
+%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:கிறான் # ;
+%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறீர்கள் # ;
+%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -212,6 +267,10 @@ LEXICON Pronouns
 அவள் PronPersAval ;  ! "avan" ! "she"
 அவர்கள் PronPersAvarkal ;  ! "avan" ! "they"
 அது PronDemAthu ;  ! "avan" ! "it"
+
+LEXICON Determiners
+
+ஒரு DetIndSg ; ! "oru" ! "a"
 
 LEXICON NounStems
 
@@ -295,10 +354,12 @@ LEXICON NounStems
 பாலைவனம் Noun ;  ! "paalaivanam" ! "desert"
 புத்தகம் Noun ;  ! "puththakam" ! "book"
 புறா Noun ;  ! "puraa" ! "dove"
+பெண் Noun ;  ! "pen" ! "girl"
 பெரியப்பா Noun ;  ! "periyappaa" ! "uncle"
 பென்சில் Noun ;  ! "pensil" ! "pencil"
 பேராசிரியர் Noun ;  ! "peraasiriyar" ! "professor"
 பேனா Noun ;  ! "penaa" ! "pen"
+பையன் Noun ; ! "paiyan" ! "boy"
 மகள் Noun ;  ! "makal" ! "daughter"
 மகன் Noun ;  ! "makan" ! "son"
 மரம் Noun ; ! "maram"  ! "tree"
@@ -525,6 +586,16 @@ LEXICON Adverbs
 விரைவில் Adv ;  ! "viraivil" ! "soon"
 வெளியே Adv ;  ! "veliye" ! "out"
 வேகமாக Adv ;  ! "vekamaaga" ! "fast, quickly"
+
+LEXICON Verbs
+
+எறி VbEri ; ! "eri" ! "throw"
+எடு VbEdu ; ! "edu" ! "take"
+பற VbPara ; ! "para" ! "fly"
+திற VbPara ; ! "thira" ! "open"
+விரும்பு VbVirumpu ; ! "virumpu" ! "like"
+திரும்பு VbVirumpu ; ! "thirumpu" ! "turn"
+
 
 LEXICON Punctuations
 
