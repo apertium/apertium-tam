@@ -220,7 +220,7 @@ LEXICON PronPersAvarkal
 
 LEXICON PronDemAthu
 
-%<prn%>%<dem%>%<sg%>%<nom%>: # ; 
+%<prn%>%<dem%>%<mf%>%<sg%>: # ; 
 
 LEXICON PronPersNeengal
 
@@ -279,6 +279,10 @@ LEXICON VbVirumpu
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறீர்கள் # ;
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
 
+LEXICON PronItgEnna
+%<prn%>%<itg%>%<mf%>%<sp%>: # ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -292,6 +296,10 @@ LEXICON Pronouns
 அவள் PronPersAval ;  ! "avan" ! "she"
 அவர்கள் PronPersAvarkal ;  ! "avan" ! "they"
 அது PronDemAthu ;  ! "avan" ! "it"
+இது PronDemAthu ;  ! "avan" ! "it"
+
+என்ன PronItgEnna ; ! "enna" ! "what"
+யார் PronItgEnna ; ! "yar" ! "who"
 
 LEXICON Determiners
 
