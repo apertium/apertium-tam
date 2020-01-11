@@ -257,6 +257,12 @@ LEXICON VbEdu
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
 
+%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:த்தேன் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:த்தாய் # ;
+%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:த்தான் # ;
+%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:த்தாள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:த்தது # ;
+
 LEXICON VbPara
 %<vblex%>%<inf%>: # ;
 %<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
@@ -267,6 +273,12 @@ LEXICON VbPara
 
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
 %<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
+
+%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:ந்தேன் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:ந்தாய் # ;
+%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:ந்தான் # ;
+%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:ந்தாள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:ந்தது # ;
 
 LEXICON VbVirumpu
 %<vblex%>%<inf%>: # ;
