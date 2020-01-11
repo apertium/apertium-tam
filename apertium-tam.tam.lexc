@@ -2,13 +2,16 @@
 
 Multichar_Symbols
 
-! Part of speech categories
+! Part of speech categories ! சொல்லிலக்கணக் கூறுகள்
 %<n%>           ! Noun                        | பெயர்ச்சொல்
+%<vblex%>       ! Standard Verb/ Lexical Verb | வினைச்சொல்
 %<adj%>         ! Adjective                   | அடைமொழி
 %<adv%>         ! Adverb                      | வினையடை
 %<num%>         ! Numeral                     | எண்
 %<post%>        ! Postposition                | விகுதி
+%<det%>         ! Determiner                  ! துணிகாரணி
 
+! Cases ! வேற்றுமை
 %<nom%>         ! Nominative                  ! முதல் வேற்றுமை/ எழுவாய் வேற்றுமை
 %<acc%>         ! Accusative                  ! இரண்டாம் வேற்றுமை
 %<dat%>         ! Dative                      ! நான்காம் வேற்றுமை
@@ -18,17 +21,39 @@ Multichar_Symbols
 %<loc%>         ! Locative                    ! ஏழாம் வேற்றுமை/ கண் வேற்றுமை
 %<voc%>         ! Vocative                    ! எட்டாம் வேற்றுமை/ விளி வேற்றுமை
 
-! Number morphology
+! Number morphology ! எண்ணிக்கை
 %<pl%>          ! Plural                      ! ஒருமை
 %<sg%>          ! Singular                    ! பன்மை
 
+! Gender ! பாலினம்
+%<m%>           ! Masculine                   ! ஆண்பால்
+%<f%>           ! Feminine                    ! பெண்பால்
+%<mf%>          ! Masculine/ Feminie          ! ஆண்பால்/ பெண்பால்
+
+! Tense ! காலம்
+%<pres%>        ! Present tense               ! நிகழ்காலம்
+%<past%>        ! Past tense                  ! இறந்தகாலம்
+%<fut%>         ! Future tense                ! எதிர்காலம்
+
+! Pronoun types ! பிரதிபெயர்
+%<pers%>        ! Personal                    ! தனிப்பட்ட பிரதிபெயர்
+%<itg%>         ! Interrogative               ! கேள்விக்குரிய பிரதிபெயர்
+%<dem%>         ! Demonstrative               ! சுட்டுப் பெயர்
+%<ind%>         ! Indefinite                  ! காலவரையற்ற பிரதிபெயர்
+
+! Person ! இடம்
+%<p1%>          ! First person                ! தன்மை
+%<p2%>          ! Second person               ! முன்னிலை
+%<p3%>          ! Third person                ! படர்க்கை
+
+! Punctuations ! நிறுத்தற்குறிகள்
 %<pquot%>       ! Quote marker                ! மேற்கோள் குறி
 %<sent%>        ! Sentence boundary           ! வசன எல்லை
 %<cm%>          ! Comma                       ! காற்புள்ளி
-%<lpar%>        !
-%<rpar%>        !
+%<lpar%>        ! Left parenthesis            ! இடது அடைப்புக்குறி
+%<rpar%>        ! Right parenthesis           ! வலது அடைப்புக்குறி
 
-! Other symbols
+! Other symbols ! வேறு குறிகள்
 %{X%}           ! Infix Consonant             ! மெய்யெழுத்து இடைவைப்பு
 
 %>              ! Morpheme boundary           ! உருபன் எல்லை
