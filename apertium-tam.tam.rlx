@@ -1,15 +1,71 @@
-# Firstly, we need to define what tags should be considered sentence delimiters. For this example, only full stop is set as delimiter.
-DELIMITERS = "<.>" ;
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" ;
 
-# We can define sets for common tag clusters
-LIST Case = (n s) (n p) ; # A set that matches either a Noun Singular or a Noun Plural
+SETS
+
+LIST N = n;
+LIST Adj = adj;
+LIST Adv = adv;
+LIST Verb = vblex;
+LIST Vbser = vbser;
+LIST Prn = prn;
+LIST MaleNoun = (n m);
+LIST FemaleNoun = (n f);
+LIST NorPrn = (n) or (prn);
+
+LIST Sg = sg;
+LIST Pl = pl;
+LIST P1 = p1;
+LIST P2 = p2;
+LIST P3 = p3;
+LIST M = m;
+LIST F = f;
 
 SECTION
-# If there is a singular noun to the right, I cannot be a verb or noun.
-REMOVE (n) OR (v) IF (1 (n s)) ;
 
-# If there is a conjunction followed by a certain cohort of the same CASE as me, choose me.
-SELECT $$Case IF (1 (cnjcoo) LINK 1C $$Case) ;
+# NOUN
+
+# Select noun if preceded by a adjective.
+SELECT N IF (0 N) (0 Verb) (-1 Adj) ;
+
+
+# Adjective
+
+# Select adjective if followed by a noun.
+SELECT Adj IF (0 Adj) (0 Adv) (1 N);
+
+
+# Adverb
+
+# Select adverb if followed by a verb.
+SELECT Adv IF (0 Adj) (0 Adv) (1 Verb);
+
+
+# VERBS
+
+# Select verb if preceded by a adverb.
+SELECT Verb IF (0 N) (0 Verb) (-1 Adv) ;
+
+# Prefer singular for verbs if preceded by a singular noun or pronoun
+SELECT Sg IF (0 Verb) (-1* (NorPrn sg));
+
+# Prefer plural for verbs if preceded by a plural noun or pronoun
+SELECT Pl IF (0 Verb) (-1* (NorPrn pl));
+
+# Prefer 1st person for verbs if preceded by a 1st person noun or pronoun
+SELECT P1 IF (0 Verb) (-1* (NorPrn p1));
+
+# Prefer 2nd person for verbs if preceded by a 2nd person noun or pronoun
+SELECT P2 IF (0 Verb) (-1* (NorPrn p2));
+
+# Prefer 3rd person for verbs if preceded by a 3rd person noun or pronoun
+SELECT P3 IF (0 Verb) (-1* (NorPrn p3));
+
+# Prefer masculine for verbs if preceded by a masculine noun or pronoun
+SELECT M IF (0 Verb) (-1* (NorPrn m));
+
+# Prefer feminine for verbs if preceded by a feminine noun or pronoun
+SELECT F IF (0 Verb) (-1* (NorPrn f));
+
 
 # Resources:
 # http://visl.sdu.dk/cg3.html
