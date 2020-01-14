@@ -10,7 +10,7 @@ LIST Vbser = vbser;
 LIST Prn = prn;
 LIST MaleNoun = (n m);
 LIST FemaleNoun = (n f);
-LIST NorPrn = (n) or (prn);
+LIST NorPrn = n prn;
 
 LIST Sg = sg;
 LIST Pl = pl;
