@@ -10,6 +10,7 @@ LIST Vbser = vbser;
 LIST Prn = prn;
 LIST MaleNoun = (n m);
 LIST FemaleNoun = (n f);
+LIST NorPrn = (n) or (prn);
 
 LIST Sg = sg;
 LIST Pl = pl;
@@ -24,7 +25,7 @@ SECTION
 # NOUN
 
 # Select noun if preceded by a adjective.
-SELECT N IF (0 N) (0 V) (-1 Adj) ;
+SELECT N IF (0 N) (0 Verb) (-1 Adj) ;
 
 
 # Adjective
@@ -35,42 +36,35 @@ SELECT Adj IF (0 Adj) (0 Adv) (1 N);
 
 # Adverb
 
-# Select adverb if followed by a noun.
+# Select adverb if followed by a verb.
 SELECT Adv IF (0 Adj) (0 Adv) (1 Verb);
 
 
 # VERBS
 
-# Select noun if preceded by a adjective.
-SELECT V IF (0 N) (0 V) (-1 Adv) ;
+# Select verb if preceded by a adverb.
+SELECT Verb IF (0 N) (0 Verb) (-1 Adv) ;
 
 # Prefer singular for verbs if preceded by a singular noun or pronoun
-SELECT Sg IF (o Verb) (-1* (n sg));
-SELECT Sg IF (o Verb) (-1* (prn sg));
+SELECT Sg IF (0 Verb) (-1* (NorPrn sg));
 
 # Prefer plural for verbs if preceded by a plural noun or pronoun
-SELECT Pl IF (o Verb) (-1* (n pl));
-SELECT Pl IF (o Verb) (-1* (prn pl));
+SELECT Pl IF (0 Verb) (-1* (NorPrn pl));
 
 # Prefer 1st person for verbs if preceded by a 1st person noun or pronoun
-SELECT P1 IF (o Verb) (-1* (n p1));
-SELECT P1 IF (o Verb) (-1* (prn p1));
+SELECT P1 IF (0 Verb) (-1* (NorPrn p1));
 
 # Prefer 2nd person for verbs if preceded by a 2nd person noun or pronoun
-SELECT P2 IF (o Verb) (-1* (n p2));
-SELECT P2 IF (o Verb) (-1* (prn p2));
+SELECT P2 IF (0 Verb) (-1* (NorPrn p2));
 
 # Prefer 3rd person for verbs if preceded by a 3rd person noun or pronoun
-SELECT P3 IF (o Verb) (-1* (n p3));
-SELECT P3 IF (o Verb) (-1* (prn p3));
+SELECT P3 IF (0 Verb) (-1* (NorPrn p3));
 
 # Prefer masculine for verbs if preceded by a masculine noun or pronoun
-SELECT M IF (o Verb) (-1* (n m));
-SELECT M IF (o Verb) (-1* (prn m));
+SELECT M IF (0 Verb) (-1* (NorPrn m));
 
 # Prefer feminine for verbs if preceded by a feminine noun or pronoun
-SELECT F IF (o Verb) (-1* (n f));
-SELECT F IF (o Verb) (-1* (prn f));
+SELECT F IF (0 Verb) (-1* (NorPrn f));
 
 
 # Resources:
