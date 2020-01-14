@@ -26,14 +26,17 @@ SECTION
 # Select noun if preceded by a adjective.
 SELECT N IF (0 N) (0 V) (-1 Adj) ;
 
+
+# Adjective
+
 # Select adjective if followed by a noun.
 SELECT Adj IF (0 Adj) (0 Adv) (1 N);
 
+
+# Adverb
+
 # Select adverb if followed by a noun.
 SELECT Adv IF (0 Adj) (0 Adv) (1 Verb);
-
-# Select det if followed by a noun.
-SELECT Det IF (0 Adj) (0 Det) (1 N);
 
 
 # VERBS
