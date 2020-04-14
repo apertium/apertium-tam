@@ -56,7 +56,7 @@ Multichar_Symbols
 ! Other symbols ! வேறு குறிகள்
 %{X%}           ! Infix Consonant             ! மெய்யெழுத்து இடைவைப்பு
 %>              ! Morpheme boundary           ! உருபன் எல்லை
-
+%»              ! Clitic boundary             ! இடைச்சொல் எல்லை
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -103,50 +103,50 @@ LEXICON Num
 %<num%>: # ;
 
 LEXICON NounAcc
-%+ஐ%<post%>:%{X%}%>ஐ # ;  ! "ai" ! ""
+%+ஐ%<post%>:%{X%}%»ஐ # ;  ! "ai" ! ""
 
 LEXICON NounIns
-%+ஆல்%<post%>:%{X%}%>ஆல் # ;  ! "aal" ! "by"
+%+ஆல்%<post%>:%{X%}%»ஆல் # ;  ! "aal" ! "by"
 %+கொண்டு%<post%>:கொண்டு # ;  ! "kondu" ! "by"
 
 LEXICON NounSoc
-%+உடன்%<post%>:%{X%}%>உடன் # ;  ! "udan" ! "with"
-%+ஒடு%<post%>:%{X%}%>ஒடு # ; ! "odu" ! "with"
-%+ஓடு%<post%>:%{X%}%>ஓடு # ; ! "oodu" ! "with"
+%+உடன்%<post%>:%{X%}%»உடன் # ;  ! "udan" ! "with"
+%+ஒடு%<post%>:%{X%}%»ஒடு # ; ! "odu" ! "with"
+%+ஓடு%<post%>:%{X%}%»ஓடு # ; ! "oodu" ! "with"
 
 LEXICON NounDat
-%+உக்கு%<post%>:%{X%}%>உக்கு # ;  ! "ukku" ! "to"
-%+உக்காக%<post%>:%{X%}%>உக்காக # ;  ! "ukkaaka" ! "to"
+%+உக்கு%<post%>:%{X%}%»உக்கு # ;  ! "ukku" ! "to"
+%+உக்காக%<post%>:%{X%}%»உக்காக # ;  ! "ukkaaka" ! "to"
 
 LEXICON NounGen
-%+அது%<post%>:%{X%}%>அது # ;  ! "athu" ! "'s'"
-%+இன்%<post%>:%{X%}%>இன் # ;  ! "in" ! "of"
-%+இனுடைய%<post%>:%{X%}%>இனுடைய # ;  ! "inudaiya" ! "of"
-%+உடைய%<post%>:%{X%}%>உடைய # ;  ! "udaiya" ! "of"
+%+அது%<post%>:%{X%}%»அது # ;  ! "athu" ! "'s'"
+%+இன்%<post%>:%{X%}%»இன் # ;  ! "in" ! "of"
+%+இனுடைய%<post%>:%{X%}%»இனுடைய # ;  ! "inudaiya" ! "of"
+%+உடைய%<post%>:%{X%}%»உடைய # ;  ! "udaiya" ! "of"
 
 LEXICON NounLoc
-%+இல்%<post%>:%{X%}%>இல் # ;  ! "il" ! "at, in"
-%+இடம்%<post%>:%{X%}%>இடம் # ;  ! "idam" ! "at, in"
+%+இல்%<post%>:%{X%}%»இல் # ;  ! "il" ! "at, in"
+%+இடம்%<post%>:%{X%}%»இடம் # ;  ! "idam" ! "at, in"
 %+கண்%<post%>:கண் # ;  ! "kan" ! "at, in"
 
 
 LEXICON NounPost
 
-! NonSeperable
-%<post%>:%{X%}%>இன்றி # ;  ! "inri" ! "without"
+! NonSeparable
+%<post%>:%{X%}%»இன்றி # ;  ! "inri" ! "without"
 
-! Seperable
-%<post%>:%{X%}%>அடியில் # ;  ! "adiyil" ! "beneath, under"
-%<post%>:%{X%}%>அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
-%<post%>:%{X%}%>அருகே # ;  ! "aruke" ! "in"
-%<post%>:%{X%}%>இலிருந்து # ;  ! "ilirundhu" ! "from"
-%<post%>:%{X%}%>உள்ளே # ;  ! "ulle" ! "in, inside of, inside, within, nto"
+! Separable
+%<post%>:%{X%}%»அடியில் # ;  ! "adiyil" ! "beneath, under"
+%<post%>:%{X%}%»அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
+%<post%>:%{X%}%»அருகே # ;  ! "aruke" ! "in"
+%<post%>:%{X%}%»இலிருந்து # ;  ! "ilirundhu" ! "from"
+%<post%>:%{X%}%»உள்ளே # ;  ! "ulle" ! "in, inside of, inside, within, nto"
 
 
 LEXICON NounPlPost
 
-%<post%>:%{X%}%>இடையில் # ;  ! "idaiyil" ! "among"
-%<post%>:%{X%}%>இடையே # ;  ! "idaiye" ! "between"
+%<post%>:%{X%}%»இடையில் # ;  ! "idaiyil" ! "among"
+%<post%>:%{X%}%»இடையே # ;  ! "idaiye" ! "between"
 
 
 LEXICON Post
@@ -296,7 +296,7 @@ LEXICON VbPara
 %<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:ந்தனர் # ;
 
 
-LEXICON VbVirumpu
+LEXICON VbVirumbu
 %<vblex%>%<inf%>: # ;
 %<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
 %<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
@@ -308,15 +308,15 @@ LEXICON VbVirumpu
 %<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:கிறீர்கள் # ;
 %<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
 
-%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:னேன் # ;
-%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:னாய் # ;
-%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:னான் # ;
-%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:னாள் # ;
+%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:இனேன் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:இனாய் # ;
+%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:இனான் # ;
+%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:இனாள் # ;
 %<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:இயது # ;
 
-%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:னோம் # ;
-%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:னீர்கள் # ;
-%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:னார்கள் # ;
+%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:இனோம் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:இனீர்கள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:இனார்கள் # ;
 
 
 LEXICON VbAzhu
@@ -720,46 +720,46 @@ LEXICON Verbs
 மித VbPara ; ! "midha" ! "float"
 இரு VbPara ; ! "iru" ! "be"
 
-விரும்பு VbVirumpu ; ! "virumpu" ! "like"
-திரும்பு VbVirumpu ; ! "thirumpu" ! "turn"
-எழுது VbVirumpu ; ! "ezhuthu" ! "write"
-வாங்கு VbVirumpu ; ! "vaangu" ! "buy"
-பேசு VbVirumpu ; ! "paesu" ! "speak"
-தூங்கு VbVirumpu ; ! "thoongu" ! "sleep"
-விளையாடு VbVirumpu ; ! "vilayaadu" ! "play"
-தூக்கு VbVirumpu ; ! "thooku" ! "lift"
-ஆட்டு VbVirumpu ; ! "aatu" ! "shake"
-பண்ணு VbVirumpu ; ! "pannu" ! "do"
-கழுவு VbVirumpu ; ! "kazhuvu" ! "wash"
-மூடு VbVirumpu ; ! "moodu" ! "close"
-நீட்டு VbVirumpu ; ! "neetu" ! "extend"
-பின்னு VbVirumpu ; ! "pinnu" ! "knot"
-விளக்கு VbVirumpu ; ! "vilakku" ! "separate"
-ஆடு VbVirumpu ; ! "aadu" ! "dance"
-சீறு VbVirumpu ; ! "seeru" ! "hiss"
-அள்ளு VbVirumpu ; ! "allu" ! "gather in palms"
-ஓடு VbVirumpu ; ! "odu" ! "run"
-மூழ்கு VbVirumpu ; ! "moozhgu" ! "drown"
-நிரப்பு VbVirumpu ; ! "nirappu" ! "fill"
-நம்பு VbVirumpu ; ! "nambu" ! "trust"
-விழுங்கு VbVirumpu ; ! "vizhungu" ! "swallow"
-கொண்டாடு VbVirumpu ; ! "kondadu" ! "celebrate"
-ஆகு VbVirumpu ; ! "aagu" ! "become"
-துப்பு VbVirumpu ; ! "thuppu" ! "spit"
-காப்பாற்று VbVirumpu ; ! "kaapaatru" ! "save"
-எண்ணு VbVirumpu ; ! "ennu" ! "count"
-தள்ளு VbVirumpu ; ! "thallu" ! "push"
-வெட்டு VbVirumpu ; ! "vettu" ! "cut"
-உடுத்து VbVirumpu ; ! "udutthu" ! "wear"
-வீசு VbVirumpu ; ! "veesu" ! "throw"
-தோண்டு VbVirumpu ; ! "thondu" ! "dig"
-தாண்டு VbVirumpu ; ! "thaandu" ! "jump over/go past"
-ஏறு VbVirumpu ; ! "yeru" ! "climb"
-இறங்கு VbVirumpu ; ! "irangu" ! "get down"
-நொறுக்கு VbVirumpu ; ! "norukku" ! "crush"
-ஒட்டு VbVirumpu ; ! "ottu" ! "stick"
-ஊட்டு VbVirumpu ; ! "ootu" ! "feed"
-காட்டு VbVirumpu ; ! "kaatu" ! "show"
+விரும்பு VbVirumbu ; ! "virumbu" ! "like"
+திரும்பு VbVirumbu ; ! "thirumbu" ! "turn"
+எழுது VbVirumbu ; ! "ezhuthu" ! "write"
+வாங்கு VbVirumbu ; ! "vaangu" ! "buy"
+பேசு VbVirumbu ; ! "paesu" ! "speak"
+தூங்கு VbVirumbu ; ! "thoongu" ! "sleep"
+விளையாடு VbVirumbu ; ! "vilayaadu" ! "play"
+தூக்கு VbVirumbu ; ! "thooku" ! "lift"
+ஆட்டு VbVirumbu ; ! "aatu" ! "shake"
+பண்ணு VbVirumbu ; ! "pannu" ! "do"
+கழுவு VbVirumbu ; ! "kazhuvu" ! "wash"
+மூடு VbVirumbu ; ! "moodu" ! "close"
+நீட்டு VbVirumbu ; ! "neetu" ! "extend"
+பின்னு VbVirumbu ; ! "pinnu" ! "knot"
+விளக்கு VbVirumbu ; ! "vilakku" ! "separate"
+ஆடு VbVirumbu ; ! "aadu" ! "dance"
+சீறு VbVirumbu ; ! "seeru" ! "hiss"
+அள்ளு VbVirumbu ; ! "allu" ! "gather in palms"
+ஓடு VbVirumbu ; ! "odu" ! "run"
+மூழ்கு VbVirumbu ; ! "moozhgu" ! "drown"
+நிரப்பு VbVirumbu ; ! "nirappu" ! "fill"
+நம்பு VbVirumbu ; ! "nambu" ! "trust"
+விழுங்கு VbVirumbu ; ! "vizhungu" ! "swallow"
+கொண்டாடு VbVirumbu ; ! "kondadu" ! "celebrate"
+ஆகு VbVirumbu ; ! "aagu" ! "become"
+துப்பு VbVirumbu ; ! "thuppu" ! "spit"
+காப்பாற்று VbVirumbu ; ! "kaapaatru" ! "save"
+எண்ணு VbVirumbu ; ! "ennu" ! "count"
+தள்ளு VbVirumbu ; ! "thallu" ! "push"
+வெட்டு VbVirumbu ; ! "vettu" ! "cut"
+உடுத்து VbVirumbu ; ! "udutthu" ! "wear"
+வீசு VbVirumbu ; ! "veesu" ! "throw"
+தோண்டு VbVirumbu ; ! "thondu" ! "dig"
+தாண்டு VbVirumbu ; ! "thaandu" ! "jump over/go past"
+ஏறு VbVirumbu ; ! "yeru" ! "climb"
+இறங்கு VbVirumbu ; ! "irangu" ! "get down"
+நொறுக்கு VbVirumbu ; ! "norukku" ! "crush"
+ஒட்டு VbVirumbu ; ! "ottu" ! "stick"
+ஊட்டு VbVirumbu ; ! "ootu" ! "feed"
+காட்டு VbVirumbu ; ! "kaatu" ! "show"
 
 அழு VbAzhu ; ! "azhu" ! "cry"
 செய் VbAzhu ; ! "sey" ! "do"
