@@ -24,7 +24,7 @@ SECTION
 
 # NOUN
 
-# Select noun if preceded by a adjective.
+# Select noun if preceded by an adjective.
 SELECT N IF (0 N) (0 Verb) (-1 Adj) ;
 
 
@@ -42,7 +42,7 @@ SELECT Adv IF (0 Adj) (0 Adv) (1 Verb);
 
 # VERBS
 
-# Select verb if preceded by a adverb.
+# Select verb if preceded by an adverb.
 SELECT Verb IF (0 N) (0 Verb) (-1 Adv) ;
 
 # Prefer singular for verbs if preceded by a singular noun or pronoun

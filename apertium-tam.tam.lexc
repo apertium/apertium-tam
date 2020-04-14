@@ -55,10 +55,8 @@ Multichar_Symbols
 
 ! Other symbols ! வேறு குறிகள்
 %{X%}           ! Infix Consonant             ! மெய்யெழுத்து இடைவைப்பு
-
 %>              ! Morpheme boundary           ! உருபன் எல்லை
 %»              ! Clitic boundary             ! இடைச்சொல் எல்லை
-
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -134,10 +132,10 @@ LEXICON NounLoc
 
 LEXICON NounPost
 
-! NonSeperable
+! NonSeparable
 %<post%>:%{X%}%»இன்றி # ;  ! "inri" ! "without"
 
-! Seperable
+! Separable
 %<post%>:%{X%}%»அடியில் # ;  ! "adiyil" ! "beneath, under"
 %<post%>:%{X%}%»அருகில் # ;  ! "arukil" ! "at, by, close to, near to, near"
 %<post%>:%{X%}%»அருகே # ;  ! "aruke" ! "in"
@@ -231,14 +229,15 @@ LEXICON DetIndSg
 
 LEXICON VbEri
 %<vblex%>%<inf%>: # ;
-%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
-%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
-%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:கிறான் # ;
-%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+%<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
+%<vblex%>%<pres%>%<p3%>%<m%>%<sg%>:கிறான் # ;
+%<vblex%>%<pres%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<sg%>:கிறது # ;
 
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறீர்கள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+%<vblex%>%<pres%>%<p1%>%<mf%>%<pl%>:கிறோம் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:கிறீர்கள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
 
 %<vblex%>%<past%>%<p1%>%<m%>%<sg%>:ந்தேன் # ;
 %<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:ந்தாய் # ;
@@ -246,16 +245,22 @@ LEXICON VbEri
 %<vblex%>%<past%>%<p3%>%<f%>%<sg%>:ந்தாள் # ;
 %<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:ந்தது # ;
 
+%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:ந்தோம் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:ந்தீர்கள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:ந்தனர் # ;
+
+
 LEXICON VbEdu
 %<vblex%>%<inf%>: # ;
-%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
-%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
-%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
-%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
+%<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
+%<vblex%>%<pres%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
+%<vblex%>%<pres%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
 
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
+%<vblex%>%<pres%>%<p1%>%<mf%>%<pl%>:கிறோம் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
 
 %<vblex%>%<past%>%<p1%>%<m%>%<sg%>:த்தேன் # ;
 %<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:த்தாய் # ;
@@ -263,16 +268,22 @@ LEXICON VbEdu
 %<vblex%>%<past%>%<p3%>%<f%>%<sg%>:த்தாள் # ;
 %<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:த்தது # ;
 
+%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:ட்டோம் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:டீர்கள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:டார்கள் # ;
+
+
 LEXICON VbPara
 %<vblex%>%<inf%>: # ;
-%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
-%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
-%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
-%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
+%<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:க்கிறேன் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:க்கிறாய் # ;
+%<vblex%>%<pres%>%<p3%>%<m%>%<sg%>:க்கிறான் # ;
+%<vblex%>%<pres%>%<p3%>%<f%>%<sg%>:க்கிறாள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<sg%>:க்கிறது # ;
 
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
+%<vblex%>%<pres%>%<p1%>%<mf%>%<pl%>:க்கிறோம் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:க்கிறீர்கள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:க்கிறார்கள் # ;
 
 %<vblex%>%<past%>%<p1%>%<m%>%<sg%>:ந்தேன் # ;
 %<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:ந்தாய் # ;
@@ -280,16 +291,45 @@ LEXICON VbPara
 %<vblex%>%<past%>%<p3%>%<f%>%<sg%>:ந்தாள் # ;
 %<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:ந்தது # ;
 
-LEXICON VbVirumpu
-%<vblex%>%<inf%>: # ;
-%<vblex%>%<pre%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
-%<vblex%>%<pre%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
-%<vblex%>%<pre%>%<p3%>%<m%>%<sg%>:கிறான் # ;
-%<vblex%>%<pre%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:ந்தோ # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:ந்தீர்கள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:ந்தனர் # ;
 
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறீர்கள் # ;
-%<vblex%>%<pre%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+
+LEXICON VbVirumbu
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
+%<vblex%>%<pres%>%<p3%>%<m%>%<sg%>:கிறான் # ;
+%<vblex%>%<pres%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+
+%<vblex%>%<pres%>%<p1%>%<mf%>%<pl%>:கிறோம் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:கிறீர்கள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+
+
+LEXICON VbAzhu
+%<vblex%>%<inf%>: # ;
+%<vblex%>%<pres%>%<p1%>%<m%>%<sg%>:கிறேன் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<sg%>:கிறாய் # ;
+%<vblex%>%<pres%>%<p3%>%<m%>%<sg%>:கிறான் # ;
+%<vblex%>%<pres%>%<p3%>%<f%>%<sg%>:கிறாள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<sg%>:கிறது # ;
+
+%<vblex%>%<pres%>%<p1%>%<mf%>%<pl%>:கிறோம் # ;
+%<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:கிறீர்கள் # ;
+%<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
+
+%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:தேன் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:தாய் # ;
+%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:தான் # ;
+%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:தாள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:துச்சு # ;
+
+%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:தோம் # ;
+%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:தீர்கள் # ;
+%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:தனர் # ;
 
 LEXICON PronItgEnna
 %<prn%>%<itg%>%<mf%>%<sp%>: # ;
@@ -381,7 +421,7 @@ LEXICON NounStems
 திரைப்படம் Noun ;  ! "thiraippadam" ! "movie"
 தீவு Noun ;  ! "theevu" ! "island"
 துண்டு Noun ;  ! "thundu" ! "towel"
-துணி Noun ;  ! "thuni" ! "clothe"
+துணி Noun ;  ! "thuni" ! "cloth"
 தொப்பி Noun ;  ! "thoppi" ! "hat"
 தொலைபேசி Noun ;  ! "tholaipesi" ! "telephone"
 தோட்டம் Noun ;  ! "thottam" ! "garden"
@@ -635,12 +675,85 @@ LEXICON Adverbs
 LEXICON Verbs
 
 எறி VbEri ; ! "eri" ! "throw"
+வரை VbEri ; ! "varai" ! "draw"
+விழு VbEri ; ! "vizhu" ! "fall"
+கீழ்படி VbEri ; ! "keezhpadi" ! "obey"
+உட்கார் VbEri ; ! "utkaar" ! "sit down"
+குனி VbEri ; ! "kuni" ! "bend down"
+நிமிர் VbEri ; ! "nimir" ! "become straight"
+
 எடு VbEdu ; ! "edu" ! "take"
+சுடு VbEdu ; ! "suttu" ! "burn"
+சாப்பிடு VbEdu ; ! "saapidu" ! "eat"
+கும்பிடு VbEdu ; ! "kumbidu" ! "pray"
+விடு VbEdu ; ! "vidu" ! "leave"
+போடு VbEdu ; ! "podu" ! "put"
+கூப்பிடு VbEdu ; ! "koopidu" ! "call"
+தொடு VbEdu ; ! "thodu" ! "touch"
+படி VbEdu ; ! "padi" ! "read/study"
+குளி VbEdu ; ! "kuli" ! "bathe"
+குதி VbEdu ; ! "kudi" ! "jump"
+சிரி VbEdu ; ! "siri" ! "laugh"
+அடி VbEdu ; ! "adi" ! "beat"
+கட்டிப்பிடி VbEdu ; ! "kattipidi" ! "hug"
+கடி VbEdu ; ! "kadi" ! "bite"
+சமை VbEdu ; ! "samai" ! "cook"
+வகு VbEdu ; ! "vagu" ! "divide"
+அலங்கரி VbEdu ; ! "alangari" ! "decorate"
+கிழி VbEdu ; ! "kizhi" ! "tear"
+அழி VbEdu ; ! "azhi" ! "erase"
+
 பற VbPara ; ! "para" ! "fly"
 திற VbPara ; ! "thira" ! "open"
-விரும்பு VbVirumpu ; ! "virumpu" ! "like"
-திரும்பு VbVirumpu ; ! "thirumpu" ! "turn"
+நட VbPara ; ! "nada" ! "walk" 
+மற VbPara ; ! "mara" ! "forget"
+மித VbPara ; ! "midha" ! "float"
+இரு VbPara ; ! "iru" ! "be"
 
+விரும்பு VbVirumbu ; ! "virumbu" ! "like"
+திரும்பு VbVirumbu ; ! "thirumbu" ! "turn"
+எழுது VbVirumbu ; ! "ezhuthu" ! "write"
+வாங்கு VbVirumbu ; ! "vaangu" ! "buy"
+பேசு VbVirumbu ; ! "paesu" ! "speak"
+தூங்கு VbVirumbu ; ! "thoongu" ! "sleep"
+விளையாடு VbVirumbu ; ! "vilayaadu" ! "play"
+தூக்கு VbVirumbu ; ! "thooku" ! "lift"
+ஆட்டு VbVirumbu ; ! "aatu" ! "shake"
+பண்ணு VbVirumbu ; ! "pannu" ! "do"
+கழுவு VbVirumbu ; ! "kazhuvu" ! "wash"
+மூடு VbVirumbu ; ! "moodu" ! "close"
+நீட்டு VbVirumbu ; ! "neetu" ! "extend"
+பின்னு VbVirumbu ; ! "pinnu" ! "knot"
+விளக்கு VbVirumbu ; ! "vilakku" ! "separate"
+ஆடு VbVirumbu ; ! "aadu" ! "dance"
+சீறு VbVirumbu ; ! "seeru" ! "hiss"
+அள்ளு VbVirumbu ; ! "allu" ! "gather in palms"
+ஓடு VbVirumbu ; ! "odu" ! "run"
+மூழ்கு VbVirumbu ; ! "moozhgu" ! "drown"
+நிரப்பு VbVirumbu ; ! "nirappu" ! "fill"
+நம்பு VbVirumbu ; ! "nambu" ! "trust"
+விழுங்கு VbVirumbu ; ! "vizhungu" ! "swallow"
+கொண்டாடு VbVirumbu ; ! "kondadu" ! "celebrate"
+ஆகு VbVirumbu ; ! "aagu" ! "become"
+துப்பு VbVirumbu ; ! "thuppu" ! "spit"
+காப்பாற்று VbVirumbu ; ! "kaapaatru" ! "save"
+எண்ணு VbVirumbu ; ! "ennu" ! "count"
+தள்ளு VbVirumbu ; ! "thallu" ! "push"
+வெட்டு VbVirumbu ; ! "vettu" ! "cut"
+உடுத்து VbVirumbu ; ! "udutthu" ! "wear"
+வீசு VbVirumbu ; ! "veesu" ! "throw"
+தோண்டு VbVirumbu ; ! "thondu" ! "dig"
+தாண்டு VbVirumbu ; ! "thaandu" ! "jump over/go past"
+ஏறு VbVirumbu ; ! "yeru" ! "climb"
+இறங்கு VbVirumbu ; ! "irangu" ! "get down"
+நொறுக்கு VbVirumbu ; ! "norukku" ! "crush"
+ஒட்டு VbVirumbu ; ! "ottu" ! "stick"
+ஊட்டு VbVirumbu ; ! "ootu" ! "feed"
+காட்டு VbVirumbu ; ! "kaatu" ! "show"
+
+அழு VbAzhu ; ! "azhu" ! "cry"
+செய் VbAzhu ; ! "sey" ! "do"
+பெய் VbAzhu ; ! "pey" ! "rain"
 
 LEXICON Punctuations
 
