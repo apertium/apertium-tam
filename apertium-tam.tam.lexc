@@ -308,16 +308,6 @@ LEXICON VbVirumbu
 %<vblex%>%<pres%>%<p2%>%<mf%>%<pl%>:கிறீர்கள் # ;
 %<vblex%>%<pres%>%<p3%>%<mf%>%<pl%>:கிறார்கள் # ;
 
-%<vblex%>%<past%>%<p1%>%<m%>%<sg%>:இனேன் # ;
-%<vblex%>%<past%>%<p2%>%<mf%>%<sg%>:இனாய் # ;
-%<vblex%>%<past%>%<p3%>%<m%>%<sg%>:இனான் # ;
-%<vblex%>%<past%>%<p3%>%<f%>%<sg%>:இனாள் # ;
-%<vblex%>%<past%>%<p3%>%<mf%>%<sg%>:இயது # ;
-
-%<vblex%>%<past%>%<p1%>%<mf%>%<pl%>:இனோம் # ;
-%<vblex%>%<past%>%<p2%>%<mf%>%<pl%>:இனீர்கள் # ;
-%<vblex%>%<past%>%<p3%>%<mf%>%<pl%>:இனார்கள் # ;
-
 
 LEXICON VbAzhu
 %<vblex%>%<inf%>: # ;
