@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Tamil], [0.1.0], [MaathavanJkr], [apertium-tam], [http://wiki.apertium.org/wiki/Apertium-tam])
+AC_INIT([Apertium Tamil], [0.1.0], [MaathavanJkr], [apertium-tam], [https://wiki.apertium.org/wiki/Apertium-tam])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
