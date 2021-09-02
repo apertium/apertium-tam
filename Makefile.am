@@ -2,8 +2,6 @@
 ## Makefile for apertium-tam
 ###############################################################################
 
-RELEASE=0.1
-VERSION=0.1.0
 LANG1=tam
 BASENAME=apertium-$(LANG1)
 
@@ -154,7 +152,9 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_tam_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
+apertium_tam_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS) \
+				  $(BASENAME).$(LANG1).lexc $(BASENAME).$(LANG1).twol \
+				  $(BASENAME).$(LANG1).rlx $(BASENAME).post-$(LANG1).dix
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
@@ -162,11 +162,7 @@ pkgconfig_DATA = $(BASENAME).pc
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
-	test -d $(DESTDIR)$(apertium_tam_srcdir) || mkdir -p $(DESTDIR)$(apertium_tam_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_tam_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_tam_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_tam_srcdir)
-	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_tam_srcdir)
+uninstall-local: uninstall-modes
 
 ###############################################################################
 ## Cleanup
